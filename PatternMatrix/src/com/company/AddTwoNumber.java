@@ -1,10 +1,10 @@
 package com.company;
 
 
-import static java.lang.Math.pow;
-import  com.company.TwoSum;
 
 import java.util.Arrays;
+
+import static java.lang.Math.pow;
 
 public class AddTwoNumber {
 
@@ -20,12 +20,16 @@ public class AddTwoNumber {
 
         //System.out.println(List2Num(AddTwoLists(Num2List(342) , Num2List(465))));
         TwoSum twoSum = new TwoSum();
+        AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
+        IntReverse intReverse = new IntReverse();
         int[] nums = new int[] {2,7,11,15};
         int target = 9;
         System.out.println(Arrays.toString(twoSum.twoSumTwoPass(nums,target)));
         System.out.println(Arrays.toString(twoSum.twoSumOnePass(nums,target)));
+        int sum = List2Num(addTwoNumbers.addTwoNumbers(Num2List(342), Num2List(465)));
+        System.out.println(sum);
+        System.out.print(intReverse.reverse(-1234));
     }
-
 
     public static ListNode AddTwoLists( ListNode valOne, ListNode valTwo) {
         ListNode addVal = null;
