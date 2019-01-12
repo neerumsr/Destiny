@@ -22,13 +22,20 @@ public class AddTwoNumber {
         TwoSum twoSum = new TwoSum();
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
         IntReverse intReverse = new IntReverse();
+        KMergeLists kMergeLists = new KMergeLists();
         int[] nums = new int[] {2,7,11,15};
         int target = 9;
-        System.out.println(Arrays.toString(twoSum.twoSumTwoPass(nums,target)));
+/*        System.out.println(Arrays.toString(twoSum.twoSumTwoPass(nums,target)));
         System.out.println(Arrays.toString(twoSum.twoSumOnePass(nums,target)));
         int sum = List2Num(addTwoNumbers.addTwoNumbers(Num2List(342), Num2List(465)));
         System.out.println(sum);
-        System.out.print(intReverse.reverse(-1234));
+        System.out.print(intReverse.reverse(-1234));*/
+        ListNode[] lists = new ListNode[3];
+        lists[0] = Num2List(31);
+        lists[1] = Num2List(65);
+        lists[2] = Num2List(98);
+        long sortedlist = List2Num(kMergeLists.mergeKLists(lists));
+        System.out.println(sortedlist);
     }
 
     public static ListNode AddTwoLists( ListNode valOne, ListNode valTwo) {
