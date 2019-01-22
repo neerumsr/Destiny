@@ -2,12 +2,14 @@ package com.company;
 
 
 
+import com.sun.tools.javac.comp.Infer;
 import org.w3c.dom.NodeList;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+import static java.lang.Math.decrementExact;
 import static java.lang.Math.pow;
 
 public class AddTwoNumber {
@@ -20,6 +22,7 @@ public class AddTwoNumber {
     }
 
 
+
     public static void main(String arg[]) throws Exception {
 
         //System.out.println(List2Num(AddTwoLists(Num2List(342) , Num2List(465))));
@@ -29,6 +32,7 @@ public class AddTwoNumber {
         KMergeLists kMergeLists = new KMergeLists();
         StringChase stringChase = new StringChase();
         int[] nums = new int[] {2,7,11,15};
+        String longPalindrone = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
         int target = 9;
 /*        System.out.println(Arrays.toString(twoSum.twoSumTwoPass(nums,target)));
         System.out.println(Arrays.toString(twoSum.twoSumOnePass(nums,target)));
@@ -41,12 +45,71 @@ public class AddTwoNumber {
         lists[2] = Num2List(876);
         long sortedlist = List2Num(kMergeLists.mergeKLists(lists));
        // System.out.println(sortedlist);
-        System.out.print(reverseString("hello"));
-      /*  ListNode list = Num2List(12345);
-        System.out.println(reverseList(list));
-        System.out.println(maxSubArray(new int[]{1,2,-3,4,5,-9,1,2,3}));*/
-      System.out.print(stringChase.numUniqueEmails(new String[]{"nk@g.com","n.k@g.com","n+k@gmail.com","nk@yahoo.com"}));
-      System.out.println(stringChase.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+        System.out.println(reverseString("hello"));
+        ListNode list = Num2List(1);
+      //  System.out.println(reverseList(list));
+        appendToTail(list, 6);
+        printList(list);
+        System.out.println();
+        list = deleteNode(list, 6);
+        printList(list);
+        System.out.println();
+        System.out.println(maxSubArray(new int[]{1,2,-3,4,5,-9,1,2,3}));
+        System.out.print(stringChase.numUniqueEmails(new String[]{"nk@g.com","n.k@g.com","n+k@gmail.com","nk@yahoo.com"}));
+        System.out.println(stringChase.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+        System.out.println("\n" + stringChase.convert("PAYPALISHIRING", 3));
+
+        System.out.println(stringChase.uniqueLetterString("ABC"));
+        System.out.println(stringChase.uniqueLetterString2("ABCD"));
+        //stringChase.SubString("ABCD", 4);
+        System.out.println(stringChase.isUniqueChars("ABCDEF"));
+        System.out.println(stringChase.isUniqueChars("ABCDEFF"));
+
+        System.out.println(stringChase.isAnagram("DOD", "GOD"));
+        System.out.println(stringChase.isAnagramNoSort("DOD", "GOD"));
+
+        System.out.println("Tiny URL implementation :  ");
+        String longURL = "https://leetcode.com/problems/design-tinyurl";
+        String tinyURL = stringChase.encodeTinyURL(longURL);
+        String tinyURLrand = stringChase.encodeTinyURLrand(longURL);
+        System.out.println("Encode " + longURL + " = " + tinyURL);
+        System.out.println("Decode " + tinyURL + " = " + stringChase.decodeTinyURL(tinyURL));
+        System.out.println("Encode Rand " + longURL + " = " + tinyURLrand);
+        System.out.println("Decode Rand " + tinyURLrand + " = " + stringChase.decodeTinyURLrand(tinyURLrand));
+        System.out.println(stringChase.URLify("Mr John Smith"));
+        System.out.println("Longest palindrome = " + stringChase.longestPalindrome("babad"));
+        System.out.println("Longest palindrome = " + stringChase.longestPalindrome("bb"));
+        System.out.println("Longest palindrome = " + stringChase.longestPalindrome("a"));
+
+        //System.out.println("Longest palindrome = " + stringChase.longestPalindrome(longPalindrone));
+
+        System.out.println("Longest palindrome = " + stringChase.longestPalindromeCenter(longPalindrone));
+
+
+
+
+
+
+
+
+    }
+
+    private static ListNode deleteNode(ListNode head, int d) {
+        ListNode cur = head;
+
+        if (cur == null) return null;
+
+        if (d == cur.data)
+            cur = cur.nextNode;
+
+        while (cur.nextNode != null) {
+            if (cur.nextNode.data == d) {
+                cur.nextNode = cur.nextNode.nextNode;
+                return head;
+            }
+            cur = cur.nextNode;
+        }
+        return head;
     }
 
     public static ListNode AddTwoLists( ListNode valOne, ListNode valTwo) {
@@ -93,6 +156,28 @@ public class AddTwoNumber {
             cur = tempNext;
         }
         return  prev;
+    }
+
+    static void appendToTail(ListNode head, int d) {
+        ListNode cur = head;
+
+        ListNode end = new ListNode(d);
+        while (cur.nextNode != null) {
+            cur = cur.nextNode;
+        }
+        cur.nextNode = end;
+    }
+
+    static void printList(ListNode head) {
+        ListNode cur = head;
+        while (cur != null && cur.nextNode != null) {
+            System.out.print(cur.data + "->");
+            cur = cur.nextNode;
+        }
+        if (cur != null)
+            System.out.print(cur.data);
+        else
+            System.out.println("Empty LinkedList");
     }
 
     static int maxSubArray(int[] nums) {
