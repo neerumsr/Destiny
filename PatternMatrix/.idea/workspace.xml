@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cdf6261-f329-4fe0-8181-4d6450125cde" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/CSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/ISort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/Main.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/AddTwoNumber$ListNode.class" afterPath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/AddTwoNumber$ListNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/AddTwoNumber.class" afterPath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/AddTwoNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/TwoSum.class" afterPath="$PROJECT_DIR$/out/production/PatternMatrix/com/company/TwoSum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/abc.txt" afterPath="$PROJECT_DIR$/res/abc.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/AddTwoNumber.java" afterPath="$PROJECT_DIR$/src/com/company/AddTwoNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/KMergeLists.java" afterPath="$PROJECT_DIR$/src/com/company/KMergeLists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/StringChase.java" afterPath="$PROJECT_DIR$/src/com/company/StringChase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/TwoSum.java" afterPath="$PROJECT_DIR$/src/com/company/TwoSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Utils.java" afterPath="$PROJECT_DIR$/src/com/company/Utils.java" />
-    </list>
+    <list default="true" id="6cdf6261-f329-4fe0-8181-4d6450125cde" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwoSigma.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TwoSigma.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/TwoSigma.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2430">
-              <caret line="165" column="2" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="168" selection-end-column="7" />
+            <state relative-caret-position="2745">
+              <caret line="183" column="50" lean-forward="true" selection-start-line="183" selection-start-column="50" selection-end-line="183" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="226">
@@ -595,10 +581,19 @@
       <option name="presentableId" value="Default" />
       <updated>1526494711270</updated>
     </task>
+    <task id="LOCAL-00001" summary="push">
+      <created>1553547106961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553547106961</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -611,7 +606,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18901454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -632,6 +627,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="push" />
+    <option name="LAST_COMMIT_MESSAGE" value="push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,16 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/TwoSigma.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="165" column="2" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="168" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/AddTwoNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
@@ -951,6 +940,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/TwoSigma.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2745">
+          <caret line="183" column="50" lean-forward="true" selection-start-line="183" selection-start-column="50" selection-end-line="183" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
