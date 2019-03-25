@@ -22,7 +22,7 @@ public class KMergeLists {
 
         // Some base cases
         if (start > end) return null;
-        if ( start == end) return lists[start];
+        if (start == end) return lists[start];
 
         // Core divide and conquer
 

@@ -31,6 +31,7 @@ public class AddTwoNumber {
         IntReverse intReverse = new IntReverse();
         KMergeLists kMergeLists = new KMergeLists();
         StringChase stringChase = new StringChase();
+
         int[] nums = new int[] {2,7,11,15};
         String longPalindrone = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
         int target = 9;
@@ -44,7 +45,7 @@ public class AddTwoNumber {
         lists[1] = Num2List(98);
         lists[2] = Num2List(876);
         long sortedlist = List2Num(kMergeLists.mergeKLists(lists));
-       // System.out.println(sortedlist);
+        System.out.println(sortedlist);
         System.out.println(reverseString("hello"));
         ListNode list = Num2List(1);
       //  System.out.println(reverseList(list));
@@ -81,16 +82,45 @@ public class AddTwoNumber {
         System.out.println("Longest palindrome = " + stringChase.longestPalindrome("bb"));
         System.out.println("Longest palindrome = " + stringChase.longestPalindrome("a"));
 
-        //System.out.println("Longest palindrome = " + stringChase.longestPalindrome(longPalindrone));
+        // System.out.println("Longest palindrome = " + stringChase.longestPalindrome(longPalindrone));
 
         System.out.println("Longest palindrome = " + stringChase.longestPalindromeCenter(longPalindrone));
+        System.out.println(stringChase.isRotation("waterbottle", "erbottlewat"));
+
+        System.out.println(Arrays.toString(stringChase.searchRange(new int[]{5,7,8,8,8,10}, 8)));
+
+        System.out.println(Arrays.toString(stringChase.searchRangeOptimized(new int[]{5,7,8,8,8,10,11}, 8)));
 
 
+        System.out.println(Utils.fibonacci(5));
 
+        System.out.println(Utils.binarySearch(new int[]{10,20,30,40,50,60,70,80,90,100}, 20));
 
+        System.out.println(Utils.binarySearchIterative(new int[]{10,20,30,40,50,60,70,80,90,100}, 20));
 
+        System.out.println(stringChase.totalFruit(new int[] {3,1,3,1,3,2,1,1,2,1,2,3,3,4}));
 
+        System.out.println(Utils.waterTrap(new int[] {0,1,0,2,1,0,1,3,2,1,2,1}));
 
+        System.out.println(Utils.romantoInt("MCMXCIV"));
+
+        System.out.println(Utils.intToRoma(4999));
+
+        System.out.println(Utils.isToeplitzMatrix(new int[][] {{}}));
+
+        Utils.gameOfLife(new int[][] {{0,1,0},{0,0,1},{1,1,1},{0,0,0}});
+
+        Utils.findMedianSortedArrays(new int[] {2, 8, 12, 15}, new int[]{1, 5, 6, 7, 10});
+
+        TwoSigma.RandomWeights randomWeights = new TwoSigma.RandomWeights(new int[] {1, 3});
+
+        TwoSigma twoSigma = new TwoSigma();
+        double median = twoSigma.findMedianSortedArrays(new int[] {1, 2}, new int[] {3, 4});
+        System.out.println("Median : " + median);
+
+        for (int i = 0; i < 4; i++) {
+            System.out.println(" Index : " + randomWeights.picIndex());
+        }
 
     }
 
@@ -180,7 +210,7 @@ public class AddTwoNumber {
             System.out.println("Empty LinkedList");
     }
 
-    static int maxSubArray(int[] nums) {
+    static int maxSubArrayOld(int[] nums) {
         int sum = nums[0], curSum = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
@@ -188,6 +218,21 @@ public class AddTwoNumber {
             curSum = Math.max(curSum, nums[i]);
             sum = Math.max(sum, curSum);
         }
+        return sum;
+    }
+
+    static int maxSubArray(int[] nums) {
+        if (nums.length <= 0) return 0;
+
+        int sum = nums[0];
+        int curSum = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            curSum += nums[i];
+            curSum = Math.max(curSum, nums[i]);
+            sum = Math.max(sum, curSum);
+        }
+
         return sum;
     }
 
